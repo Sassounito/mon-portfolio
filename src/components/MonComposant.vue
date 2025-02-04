@@ -6,7 +6,8 @@
             <img src="../assets/Autoportrait.png">
             <div class="bienvenue">
                 <h2>Bienvenue sur mon </h2>
-                <button class="bouton" @click="say('Apprennez à me connaître à travers mes projets !')"><span class="text">Portfolio !</span></button>
+                <button class="bouton" @click="say('Apprennez à me connaître à travers mes projets !')"><span
+                        class="text">Portfolio !</span></button>
                 <h2>Je vous souhaite une bonne visite !</h2>
             </div>
         </div>
@@ -37,7 +38,7 @@ function say(message) {
     display: flex;
 }
 
-.bienvenue{
+.bienvenue {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,40 +46,40 @@ function say(message) {
 }
 
 .bouton {
-  align-items: center;
-  background-image: linear-gradient(135deg, rgb(127, 11, 159) 40%, rgb(199, 21, 133));
-  border: 0;
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  font-family: 'comfortaa';
-  font-weight: bolder;
-  font-size: 50px;
-  height: 100px;
-  justify-content: center;
-  max-width: 100%;
-  padding: 2px 40px 0 40px;
-  touch-action: manipulation;
+    align-items: center;
+    background-image: linear-gradient(135deg, rgb(127, 11, 159) 40%, rgb(199, 21, 133));
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: 'comfortaa';
+    font-weight: bolder;
+    font-size: 50px;
+    height: 100px;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2px 40px 0 40px;
+    touch-action: manipulation;
 }
 
 .bouton:active {
-  outline: 0;
+    outline: 0;
 }
 
 .bouton:hover {
-  outline: 0;
-  box-shadow: 0 12px 16px 0 rgba(199, 21, 133, 0.24), 0 17px 50px 0 rgba(199, 21, 133, 0.19);
+    outline: 0;
+    box-shadow: 0 12px 16px 0 rgba(199, 21, 133, 0.24), 0 17px 50px 0 rgba(199, 21, 133, 0.19);
 }
 
 .bouton span {
-  transition: all 200ms;
+    transition: all 200ms;
 }
 
 .bouton:hover span {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 img {
@@ -87,5 +88,32 @@ img {
 
 h2 {
     width: 80%;
+}
+
+@media screen and (max-width: 500px) {
+    .accueil {
+        font-size: small;
+    }
+
+    .bouton {
+        font-size: small;
+        padding: 3%;
+        height: 20%;
+    }
+
+    .mon-composant {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .bienvenue {
+        padding-top: 20%;
+    }
+
+    img {
+        padding: 20%;
+        width: 250px;
+    }
 }
 </style>

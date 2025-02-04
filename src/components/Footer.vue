@@ -3,13 +3,13 @@
         <div class="droit">
             <P><span class="couleur">Tous droits réservés : </span>Sarah Sausset</P>
         </div>
-        
+
         <div id="contact"><span class="couleur">Contact : </span></div>
 
         <div class="contact">
-                <p>sarah.sausset10@gmail.com</p>
-                <p>06 61 12 55 74</p>
-                <p><a href="https://www.linkedin.com/in/sarah-sausset-8420122b9/">LinkedIn</a></p>
+            <p>sarah.sausset10@gmail.com</p>
+            <p>06 61 12 55 74</p>
+            <p><a href="https://www.linkedin.com/in/sarah-sausset-8420122b9/">LinkedIn</a></p>
         </div>
     </section>
 </template>
@@ -51,12 +51,35 @@ a {
     text-align: left;
 }
 
-#contact{
+#contact {
     width: 10%;
     text-align: right;
 }
 
 .couleur {
     color: rgb(199, 21, 133);
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .droit {
+        padding: 3%;
+        width: 80%;
+    }
+
+    .contact {
+        align-items: center;
+    }
+
+    #contact {
+        width: 80%;
+        text-align: center;
+    }
 }
 </style>

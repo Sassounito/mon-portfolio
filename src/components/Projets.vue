@@ -36,8 +36,7 @@
 
             <article class="liste-projets">
 
-                <a class="titre"
-                    href="https://quantum.2024.mmibut1.org/index.php">
+                <a class="titre" href="https://quantum.2024.mmibut1.org/index.php">
                     Marque de bière </a>
 
                 <div class="projet">
@@ -132,5 +131,33 @@ img {
     filter: blur(2px);
     transition: 0.2s ease-in;
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: larger;
+        padding: 10%;
+    }
+
+    .cartes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .liste-projets {
+        position: relative;
+    }
+
+    .projet {
+        line-height: 0;
+        overflow: hidden;
+    }
+
+    .titre {
+        opacity: 1;
+        background: rgba(62, 0, 90, 0.2);
+    }
+
 }
 </style>

@@ -59,4 +59,14 @@ a {
     padding-right: 450px;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 500px) {
+    .header {
+        font-size: small;
+    }
+
+    .zero {
+        display: none;
+    }
+}
 </style>
