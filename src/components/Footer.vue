@@ -81,5 +81,9 @@ a {
         width: 80%;
         text-align: center;
     }
+
+    p {
+        padding-top: 5%;
+    }
 }
 </style>
