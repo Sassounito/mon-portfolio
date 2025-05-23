@@ -29,7 +29,7 @@
 .header {
     background-color: rgb(76, 224, 230);
     color: rgb(0, 24, 44);
-    font-family: 'roboto';
+    font-family: 'Comfortaa';
     font-size: 35px;
     width: 100%;
     text-align: center;
