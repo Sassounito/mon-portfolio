@@ -8,7 +8,7 @@
                 <h2>Bienvenue sur mon </h2>
                 <button class="bouton" @click="say('Apprennez à me connaître à travers mes projets !')"><span
                         class="text">Portfolio !</span></button>
-                <h2>Je vous souhaite une bonne visite !</h2>
+                <h2>Je vous souhaite une bonne visit !</h2>
             </div>
         </div>
     </section>
