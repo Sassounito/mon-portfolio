@@ -2,17 +2,17 @@
     <section class="header">
         <nav>
             <ul>
-                <li class='zero'>
-                    <p class='un'>Sarah Sausset</p>
+                <li class='un'>
+                    <p class='name'>Sarah Sausset</p>
                 </li>
                 <li class='deux'>
-                    <RouterLink to="/">Accueil</RouterLink>
+                    <RouterLink to="/" id="lienspages">Accueil</RouterLink>
                 </li>
                 <li class="trois">
-                    <RouterLink to="/projects">Mes projets</RouterLink>
+                    <RouterLink to="/projects" id="lienspages">Mes projets</RouterLink>
                 </li>
                 <li class="quatre">
-                    <RouterLink to="/me">À propos de moi</RouterLink>
+                    <RouterLink to="/me" id="lienspages">À propos de moi</RouterLink>
                 </li>
             </ul>
         </nav>
@@ -25,14 +25,17 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 .header {
-    background-color: rgb(76, 224, 230);
-    color: rgb(0, 24, 44);
-    font-family: 'Comfortaa';
+    background-color: rgba(15, 0, 24, 0.7);
+    backdrop-filter: blur(8px);
+    color: rgb(255, 255, 255);
+    font-family: 'Lexend';
     font-size: 35px;
     width: 100%;
     text-align: center;
+    position: fixed;
 }
 
 ul {
@@ -48,16 +51,17 @@ li {
     width: 30%;
 }
 
-a {
+#lienspages {
+    font-family: 'Comfortaa';
     text-decoration: none;
-    color: rgb(0, 24, 44);
-    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
-.un {
+.name {
     font-size: large;
     padding-right: 450px;
-    font-weight: bolder;
+    font-weight: 200;
 }
 
 @media screen and (max-width: 500px) {

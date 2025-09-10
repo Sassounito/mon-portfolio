@@ -35,6 +35,7 @@ export default {
     color: rgb(127, 11, 159);
     font-family: 'Comfortaa';
     font-size: 50px;
+    width: 100%;
 }
 
 .titre {
@@ -46,16 +47,22 @@ export default {
 }
 
 .desc {
-    color: rgb(0, 24, 44);
+    /* color: rgb(0, 24, 44); */
+    color: rgb(255, 255, 255);
     padding: 0% 20% 2% 20%;
+    font-family: 'Lexend';
     font-size: 20px;
+    font-weight: 200;
     letter-spacing: 1px;
-    font-weight: lighter;
 }
 
 img {
     width: 30%;
     padding: 2%;
+}
+
+h1 {
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 500px) {

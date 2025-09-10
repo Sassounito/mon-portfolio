@@ -3,12 +3,21 @@
 <template>
     <section class="accueil">
         <div class="mon-composant">
+            <img src="../assets/Autoportrait_V2.png">
+            <div class="bienvenue">
+                <h2>Bienvenue sur mon </h2>
+                <button class="bouton" @click="say('Apprennez à me connaître à travers mes projets !')"><span
+                        class="text">Portfolio !</span></button>
+                <h2>Je vous souhaite une bonne visite !</h2>
+            </div>
+        </div>
+        <div class="mon-composant">
             <img src="../assets/Autoportrait.png">
             <div class="bienvenue">
                 <h2>Bienvenue sur mon </h2>
                 <button class="bouton" @click="say('Apprennez à me connaître à travers mes projets !')"><span
                         class="text">Portfolio !</span></button>
-                <h2>Je vous souhaite une bonne visite ! ^^ arblajnuk jpxfrd lolilol</h2>
+                <h2>Je vous souhaite une bonne visite !</h2>
             </div>
         </div>
     </section>
@@ -29,7 +38,7 @@ function say(message) {
 <style scoped>
 .accueil {
     color: rgb(127, 11, 159);
-    font-family: 'Comfortaa';
+    font-family: 'Lexend';
     font-size: 45px;
     width: 100%;
 }
@@ -82,12 +91,17 @@ function say(message) {
     transform: scale(1.1);
 }
 
+.text {
+    font-weight: 400;
+}
+
 img {
     width: 30%;
 }
 
 h2 {
     width: 80%;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 500px) {
