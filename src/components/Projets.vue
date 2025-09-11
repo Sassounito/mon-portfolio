@@ -1,22 +1,29 @@
 <template>
     <section class="page-projets">
+        <div>
+            <ul>
+                <li class='bloc'>
+                    bloc
+                </li>
+            </ul>
+        </div>
         <h2>Mes projets</h2>
 
         <div class="cartes">
 
             <article class="liste-projets">
+                <RouterLink to="/graphism" id="lienspages">
 
-                <a class="titre"
-                    href="test.vue">
-                    Graphisme
-                </a>
+                    <a class="titre" href=#>
+                        Graphisme
+                    </a>
 
-                <div class="projet">
-                    <a href="#">
-                        <img width="300" height="169" src="../assets/Graphisme.png"> </a>
+                    <div class="projet">
+                        <a href="#">
+                            <img width="300" height="169" src="../assets/Graphisme.png"> </a>
 
-                </div>
-
+                    </div>
+                </RouterLink>
             </article>
 
             <article class="liste-projets">

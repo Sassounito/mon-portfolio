@@ -5,7 +5,7 @@
         </div>
 
         <div class="droite">
-            <p>Sarah Sausset</p>
+            <p class="info">Sarah Sausset</p>
         </div>
 
         <div class="gauche">
@@ -13,9 +13,9 @@
         </div>
 
         <div class="droite">
-            <p>sarah.sausset10@gmail.com</p>
-            <p>06 61 12 55 74</p>
-            <p><a class="linkedin" href="https://www.linkedin.com/in/sarah-sausset-8420122b9/">LinkedIn</a></p>
+            <p class="info">sarah.sausset10@gmail.com</p>
+            <p class="info">06 61 12 55 74</p>
+            <p class="info"><a class="linkedin" href="https://www.linkedin.com/in/sarah-sausset-8420122b9/">LinkedIn</a></p>
         </div>
     </section>
 </template>
@@ -33,12 +33,14 @@
     font-size: 20px;
     font-weight: 400;
     margin: 0;
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
     align-items: flex-start;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
 }
@@ -68,25 +70,32 @@
     color: rgb(199, 21, 133);
 }
 
+/* faire un truc pour la taille 1538*/
 @media screen and (max-width: 500px) {
     .footer {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         font-size: 10px;
+        padding-top: 3%;
+        padding-bottom: 5%;
     }
 
     .gauche {
-        padding: 3%;
-        width: 80%;
+        text-align: left;
+        padding-top: 2%;
+        padding-left: 5%;
+        width: 30%;
+    }
+
+    .droite {
+        width: 30%;
+        padding-left: 10%;
     }
 
     .info {
         align-items: center;
-    }
-
-    p {
-        padding-top: 5%;
+        padding-bottom: 3%;
     }
 }
 </style>

@@ -35,4 +35,8 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 0; /* Chrome, Safari, Opera */
+}
 </style>

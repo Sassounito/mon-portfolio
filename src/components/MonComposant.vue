@@ -2,16 +2,26 @@
 
 <template>
     <section class="accueil">
+        <div>
+            <ul>
+                <li class='bloc'>
+                    bloc
+                </li>
+            </ul>
+        </div>
         <div class="mon-composant">
             <img src="../assets/Autoportrait_V2.png">
             <div class="bienvenue">
                 <h2>Bienvenue sur mon </h2>
-                <button class="bouton" @click="say('Apprennez à me connaître à travers mes projets !')"><span
-                        class="text">Portfolio !</span></button>
+
+                <button class="bouton" @click="say('Apprennez à me connaître à travers mes projets !')">
+                    <span class="text">Portfolio !</span>
+                </button>
+
                 <h2>Je vous souhaite une bonne visite !</h2>
             </div>
         </div>
-        <div class="mon-composant">
+        <!-- <div class="mon-composant">
             <img src="../assets/Autoportrait.png">
             <div class="bienvenue">
                 <h2>Bienvenue sur mon </h2>
@@ -19,7 +29,7 @@
                         class="text">Portfolio !</span></button>
                 <h2>Je vous souhaite une bonne visite !</h2>
             </div>
-        </div>
+        </div> -->
     </section>
 </template>
 
@@ -39,12 +49,13 @@ function say(message) {
 .accueil {
     color: rgb(127, 11, 159);
     font-family: 'Lexend';
-    font-size: 45px;
+    font-size: 60px;
     width: 100%;
 }
 
 .mon-composant {
     display: flex;
+    justify-content: space-between;
 }
 
 .bienvenue {
@@ -52,6 +63,8 @@ function say(message) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 60%;
+    padding-right: 10%;
 }
 
 .bouton {
@@ -95,8 +108,13 @@ function say(message) {
     font-weight: 400;
 }
 
+.bloc {
+    color: rgb(15, 0, 24);
+}
+
 img {
-    width: 30%;
+    width: 25%;
+    padding-left: 2%;
 }
 
 h2 {
@@ -123,10 +141,11 @@ h2 {
 
     .bienvenue {
         padding-top: 20%;
+        padding-right: 0%;
     }
 
     img {
-        padding: 20%;
+        padding: 10%;
         width: 250px;
     }
 }
