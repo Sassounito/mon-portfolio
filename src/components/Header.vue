@@ -41,6 +41,8 @@
     /* z-index: 0; */
 }
 
+.un{text-align: left;}
+
 /*
 .header::before {
     content: "";

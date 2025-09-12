@@ -5,7 +5,7 @@
         <div>
             <ul>
                 <li class='bloc'>
-                    bloc
+                    .
                 </li>
             </ul>
         </div>
@@ -30,6 +30,9 @@
                 <h2>Je vous souhaite une bonne visite !</h2>
             </div>
         </div> -->
+        <div>
+            <p class='bloc'>.</p>
+        </div>
     </section>
 </template>
 

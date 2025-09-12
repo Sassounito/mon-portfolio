@@ -52,14 +52,13 @@
 }
 
 .gauche {
-    width: 25%;
+    width: 24%;
     text-align: right;
-    padding-right: 1%;
 }
 
 .droite {
     color: rgb(255, 255, 255);
-    width: 25%;
+    width: 24%;
     display: flex;
     flex-direction: column;
     text-align: left;

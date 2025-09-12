@@ -14,7 +14,7 @@
             <article class="liste-projets">
                 <RouterLink to="/graphism" id="lienspages">
 
-                    <a class="titre" href=#>
+                    <a class="titre" href="#">
                         Graphisme
                     </a>
 
@@ -27,35 +27,38 @@
             </article>
 
             <article class="liste-projets">
+                <RouterLink to="/video">
 
-                <a class="titre"
-                    href="https://youtube.com/playlist?list=PLONaOtGtGai7oIIoB7a-6Z_VDkmHRDkSR&si=b1yOsAjjN3dQ6uY8">
-                    Projets video </a>
-
-                <div class="projet">
-                    <a href="#">
-                        <img width="300" height="169" src="../assets/Clip.jpg">
+                    <a class="titre">
+                        <!-- href="https://youtube.com/playlist?list=PLONaOtGtGai7oIIoB7a-6Z_VDkmHRDkSR&si=b1yOsAjjN3dQ6uY8" -->
+                        Projets video 
                     </a>
 
-                </div>
+                    <div class="projet">
+                        <a href="#">
+                            <img width="300" height="169" src="../assets/Clip.jpg">
+                        </a>
 
+                    </div>
+                </RouterLink>
             </article>
 
             <article class="liste-projets">
-
+<RouterLink to="/beer">
                 <a class="titre" href="https://quantum.2024.mmibut1.org/index.php">
-                    Marque de bière </a>
+                    Marque de bière 
+                </a>
 
                 <div class="projet">
                     <a href="#">
                         <img width="300" height="169" src="../assets/Ciel2.jpg"> </a>
 
                 </div>
-
+</RouterLink>
             </article>
 
             <article class="liste-projets">
-
+<RouterLink to="/association">
                 <a class="titre"
                     href="https://www.canva.com/design/DAGcdtMsfiA/ekOs23pdqj0DJWM69HYWvg/edit?utm_content=DAGcdtMsfiA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
                     Association </a>
@@ -65,7 +68,21 @@
                         <img width="300" height="169" src="../assets/Ehconnard.png"> </a>
 
                 </div>
+</RouterLink>
+            </article>
 
+            <article class="liste-projets">
+<RouterLink to="/association">
+                <a class="titre"
+                    href="https://www.canva.com/design/DAGcdtMsfiA/ekOs23pdqj0DJWM69HYWvg/edit?utm_content=DAGcdtMsfiA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                    Motion Design </a>
+
+                <div class="projet">
+                    <a href="#">
+                        <img width="300" height="169" src="../assets/PP your name.jpg"> </a>
+
+                </div>
+</RouterLink>
             </article>
         </div>
     </section>
@@ -95,7 +112,7 @@ img {
 
 .cartes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2em;
     margin: 5%;
 }
@@ -143,13 +160,17 @@ img {
 @media screen and (max-width: 500px) {
     h2 {
         font-size: larger;
-        padding: 10%;
+        padding-top: 15%;
+        padding-bottom: 10%;
     }
 
     .cartes {
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 70%;
+        padding-bottom: 10%;
     }
 
     .liste-projets {
