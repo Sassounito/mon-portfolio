@@ -36,7 +36,14 @@ export default {
   color: #2c3e50;
 }
 
-.horizontal-scroll::-webkit-scrollbar {
-  height: 0; /* Chrome, Safari, Opera */
+/* Pour Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Pour Firefox */
+* {
+  scrollbar-width: none; /* masque la barre */
+  -ms-overflow-style: none; /* IE et Edge Legacy */
 }
 </style>

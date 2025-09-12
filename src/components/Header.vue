@@ -3,7 +3,7 @@
         <nav>
             <ul>
                 <li class='un'>
-                    <p class='name'>Sarah Sausset</p>
+                    <RouterLink to="/" id="lienspages"><p class='name'>Sarah Sausset</p></RouterLink>
                 </li>
                 <li class='deux'>
                     <RouterLink to="/" id="lienspages">Accueil</RouterLink>
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+// import { RouterLink } from 'vue-router';
+
 </script>
 
 <style>
@@ -38,7 +40,7 @@
     position: fixed;
     /* background: linear-gradient(0deg, hsla(0, 0%, 100%, 0) 0%, rgb(15, 0, 24, 0.8) 10%); */
     /* box-shadow: 0 0 8px 8px rgba(15, 0, 24, 0.9); */
-    /* z-index: 0; */
+    z-index: 10;
 }
 
 .un{text-align: left;}
