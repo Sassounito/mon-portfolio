@@ -3,7 +3,9 @@
         <nav>
             <ul>
                 <li class='un'>
-                    <RouterLink to="/" id="lienspages"><p class='name'>Sarah Sausset</p></RouterLink>
+                    <RouterLink to="/" id="lienspages">
+                        <p class='name'>Sarah Sausset</p>
+                    </RouterLink>
                 </li>
                 <li class='deux'>
                     <RouterLink to="/" id="lienspages">Accueil</RouterLink>
@@ -21,8 +23,6 @@
 </template>
 
 <script>
-// import { RouterLink } from 'vue-router';
-
 </script>
 
 <style>
@@ -43,7 +43,16 @@
     z-index: 10;
 }
 
-.un{text-align: left;}
+.un {
+    text-align: left;
+}
+
+.name {
+    font-family: 'Lexend';
+    font-size: large;
+    padding-right: 450px;
+    font-weight: 200;
+}
 
 /*
 .header::before {
@@ -77,30 +86,6 @@ li {
     font-weight: bold;
 }
 
-.name {
-    font-size: large;
-    padding-right: 450px;
-    font-weight: 200;
-}
-
-/*
-.deux:active {
-    outline: 0;
-}
-
-.deux:hover {
-    outline: 0;
-    box-shadow: 0 12px 16px 0 rgba(199, 21, 133, 0.24), 0 17px 50px 0 rgba(199, 21, 133, 0.19);
-}
-
-#lienspages {
-    transition: all 200ms;
-}
-
-#lienspages :hover {
-    transform: scale(2);
-}*/
-
 @media screen and (max-width: 500px) {
     .name {
         font-size: smaller;
@@ -114,8 +99,13 @@ li {
     .zero {
         display: none;
     }
-    .un{
-    width: 15%;}
-    .quatre{margin: 5%;}
+
+    .un {
+        width: 15%;
+    }
+
+    .quatre {
+        margin: 5%;
+    }
 }
 </style>

@@ -25,6 +25,16 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  /* Pour Firefox */
+  scrollbar-width: none;
+  /* masque la barre */
+  -ms-overflow-style: none;
+  /* IE et Edge Legacy */
+}
+
+/* Pour Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  display: none;
 }
 
 #app {
@@ -34,16 +44,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-/* Pour Chrome, Edge, Safari */
-*::-webkit-scrollbar {
-  display: none;
-}
-
-/* Pour Firefox */
-* {
-  scrollbar-width: none; /* masque la barre */
-  -ms-overflow-style: none; /* IE et Edge Legacy */
 }
 </style>

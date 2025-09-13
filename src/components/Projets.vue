@@ -12,7 +12,7 @@
         <div class="cartes">
 
             <article class="liste-projets">
-                <!-- <RouterLink to="/graphism" id="lienspages"> -->
+                <RouterLink to="/graphism" id="lienspages">
 
                 <a class="titre"
                     href="https://www.canva.com/design/DAGcdtMsfiA/ekOs23pdqj0DJWM69HYWvg/edit?utm_content=DAGcdtMsfiA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
@@ -24,15 +24,15 @@
                         <img width="300" height="169" src="../assets/Graphisme.png"> </a>
 
                 </div>
-                <!-- </RouterLink> -->
+                </RouterLink>
             </article>
 
             <article class="liste-projets">
-                <!-- <RouterLink to="/video"> -->
+                <RouterLink to="/videos">
 
                 <a class="titre"
                     href="https://youtube.com/playlist?list=PLONaOtGtGai7oIIoB7a-6Z_VDkmHRDkSR&si=b1yOsAjjN3dQ6uY8">
-                    Projets video
+                    Projets vidéos
                 </a>
 
                 <div class="projet">
@@ -41,11 +41,11 @@
                     </a>
 
                 </div>
-                <!-- </RouterLink> -->
+                </RouterLink>
             </article>
 
             <article class="liste-projets">
-                <!-- <RouterLink to="/beer"> -->
+                <RouterLink to="/beer">
                 <a class="titre" href="https://quantum.2024.mmibut1.org/index.php">
                     Marque de bière
                 </a>
@@ -55,11 +55,11 @@
                         <img width="300" height="169" src="../assets/Ciel2.jpg"> </a>
 
                 </div>
-                <!-- </RouterLink> -->
+                </RouterLink>
             </article>
 
             <article class="liste-projets">
-                <!-- <RouterLink to="/association"> -->
+                <RouterLink to="/association">
                 <a class="titre"
                     href="https://www.canva.com/design/DAGcdtMsfiA/ekOs23pdqj0DJWM69HYWvg/edit?utm_content=DAGcdtMsfiA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
                     Association </a>
@@ -69,7 +69,7 @@
                         <img width="300" height="169" src="../assets/Ehconnard.png"> </a>
 
                 </div>
-                <!-- </RouterLink> -->
+                </RouterLink>
             </article>
 
             <article class="liste-projets">
@@ -80,6 +80,19 @@
                     <div class="projet">
                         <a href="#">
                             <img width="300" height="169" src="../assets/PP your name.jpg"> </a>
+
+                    </div>
+                </RouterLink>
+            </article>
+
+            <article class="liste-projets">
+                <RouterLink to="/communication">
+                    <a class="titre" href="#">
+                        Communication </a>
+
+                    <div class="projet">
+                        <a href="#">
+                            <img width="300" height="169" src="../assets/Ciel.jpg"> </a>
 
                     </div>
                 </RouterLink>
@@ -124,7 +137,7 @@ img {
 
 .cartes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
     grid-gap: 2em;
     margin: 5%;
@@ -134,6 +147,7 @@ img {
 /* hover styles */
 .liste-projets {
     position: relative;
+    /* margin: 8%; */
 }
 
 .projet {
