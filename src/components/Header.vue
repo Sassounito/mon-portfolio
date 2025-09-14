@@ -86,6 +86,24 @@ li {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1700px) {
+    #lienspages {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .header {
+        font-size: 20px;
+    }
+
+    .name {
+        width: 30%;
+        padding-right: 0;
+        font-size: small;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .name {
         font-size: smaller;

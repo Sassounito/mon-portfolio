@@ -15,7 +15,8 @@
         <div class="droite">
             <p class="info">sarah.sausset10@gmail.com</p>
             <p class="info">06 61 12 55 74</p>
-            <p class="info"><a class="linkedin" href="https://www.linkedin.com/in/sarah-sausset-8420122b9/">LinkedIn</a></p>
+            <p class="info"><a class="linkedin" href="https://www.linkedin.com/in/sarah-sausset-8420122b9/">LinkedIn</a>
+            </p>
         </div>
     </section>
 </template>
@@ -63,13 +64,40 @@
     flex-direction: column;
     text-align: left;
     font-weight: 300;
+    padding-bottom: 1%;
+
 }
 
 .couleur {
     color: rgb(199, 21, 133);
 }
 
-/* faire un truc pour la taille 1538*/
+/* faire un truc pour la taille 1538 ou plutot 1080*/
+@media screen and (max-width: 1080px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: medium;
+        width: 100%;
+    }
+
+    .gauche {
+        text-align: end;
+        height: 35px;
+        width: 95%;
+    }
+
+    .droite {
+        width: 95%;
+    }
+
+    .info {
+        padding-bottom: 1%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .footer {
         display: flex;
@@ -84,6 +112,7 @@
         text-align: left;
         padding-top: 2%;
         padding-left: 5%;
+        height: auto;
         width: 30%;
     }
 

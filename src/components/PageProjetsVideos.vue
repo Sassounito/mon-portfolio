@@ -1,12 +1,5 @@
 <template>
     <section class="pageprojvid">
-        <div>
-            <ul>
-                <li class='bloc'>
-                    .
-                </li>
-            </ul>
-        </div>
 
         <h2 class="titrepage">Projets Vidéos</h2>
 
@@ -124,7 +117,7 @@
             <div class="desc reveal-2">
                 <div>Dans cet exercice en chaîne, chaque groupe prenait en charge une étape : choix d'une
                     contrainte -> écriture du scénario à partir de celle-ci -> tournage du scénario -> montage.</div>
-                <div>Ici, il s'agit du montage que j'ai réalisé.</div>
+                <div>Ici, il ne s'agit que du montage que j'ai réalisé.</div>
             </div>
         </article>
 
@@ -232,6 +225,7 @@ onMounted(() => {
     font-family: 'Comfortaa';
     font-size: 50px;
     padding: 5%;
+    padding-top: 12%;
 }
 
 .arblajnuk {
@@ -266,7 +260,53 @@ onMounted(() => {
     padding: 4%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1080px) {
+    .titrepage {
+        padding-top: 20%;
+        padding-bottom: 0;
+    }
+
+    .arblajnuk {
+        font-size: 30px;
+        order: 1;
+    }
+
+    .test {
+        grid-template-rows: 0.25fr 0.25fr 1fr;
+    }
+
+    .desc {
+        order: 3;
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+        margin-top: 5%;
+    }
+
+    .reveal-3 {
+        order: 2;
+    }
+
+    iframe {
+        height: 240px;
+        width: 400px;
+        padding: 5%;
+    }
+
+    .apercu {
+        order: 5;
+        /* display: none; */
+    }
+
+    .playlist {
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .pageprojvid {
         font-size: small;
     }
@@ -304,6 +344,7 @@ onMounted(() => {
 
     iframe {
         height: 120px;
+        width: 240px;
         padding: 5%;
     }
 
@@ -313,7 +354,7 @@ onMounted(() => {
     }
 
     .playlist {
-        padding: 20%;
+        padding: 10%;
     }
 }
 </style>

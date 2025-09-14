@@ -125,13 +125,58 @@ h2 {
     font-weight: 300;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1700px) {
+    h2 {
+        font-size: 95%;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
     .accueil {
-        font-size: small;
+        font-size: large;
+    }
+
+    .bloc {
+        display: none;
     }
 
     .bouton {
+        font-size: x-large;
+        padding: 3%;
+        height: 20%;
+    }
+
+    .mon-composant {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .bienvenue {
+        padding-top: 10%;
+        padding-right: 0%;
+    }
+
+    img {
+        padding: 5%;
+        height: 20%;
+    }
+
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .accueil {
         font-size: small;
+        padding-bottom: 15%;
+    }
+
+    .bouton {
+        font-size: medium;
         padding: 3%;
         height: 20%;
     }
@@ -150,6 +195,10 @@ h2 {
     img {
         padding: 10%;
         width: 250px;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 }
 </style>
