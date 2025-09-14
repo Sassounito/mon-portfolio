@@ -30,7 +30,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 .header {
-    background-color: rgba(15, 0, 24, 0.9);
+    background-color: rgba(15, 0, 24, 0.7);
     backdrop-filter: blur(8px);
     color: rgb(255, 255, 255);
     font-family: 'Lexend';

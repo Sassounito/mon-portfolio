@@ -72,7 +72,7 @@ h1 {
     }
 
     .desc {
-        font-size: x-small;
+        font-size: small;
         padding: 0% 10% 2% 10%;
     }
 

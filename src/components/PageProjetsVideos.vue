@@ -31,8 +31,7 @@
                     d'escampette"
                     et l'associer à l'émission "Mariés au premier regard". </div>
                 <div>Nous avons conçu le storyboard, fabriqué le décor, pris les photos image par image, ajouté
-                    bruitages
-                    et sons, puis tout assemblé dans un montage final.</div>
+                    bruitages et sons, puis tout assemblé dans un montage final.</div>
             </div>
         </article>
 
@@ -273,6 +272,7 @@ onMounted(() => {
     }
 
     .titrepage {
+        font-size: 30px;
         padding-top: 20%;
         padding-bottom: 0;
     }
@@ -295,7 +295,7 @@ onMounted(() => {
         display: flex;
         flex-direction: column;
         padding-bottom: 2%;
-        margin-top: 20%;
+        margin-top: 15%;
     }
 
     .reveal-3 {
