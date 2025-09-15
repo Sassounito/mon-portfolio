@@ -23,7 +23,16 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        // Si on utilise les boutons "précédent/suivant"
+        if (savedPosition) {
+            return savedPosition
+        } else {
+            // sinon on revient en haut à gauche
+            return { top: 0, left: 0 }
+        }
+    }
 });
 
 export default router;
